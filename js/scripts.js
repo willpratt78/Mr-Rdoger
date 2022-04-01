@@ -10,3 +10,4 @@ let newArray =[]
 }
 }
 console.log(newArray)
+
