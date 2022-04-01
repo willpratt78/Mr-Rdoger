@@ -10,21 +10,16 @@ function numberArray() {
 console.log(newArray)
 
 function numberReplacement() {
-newArray.forEach(function(element) {
-  let stringArr = newArray.toString();
-  let splitArray = stringArr.split(" ")
-  console.log(stringArr)
-  console.log(splitArray)
-  debugger;
-    if  (newArray.includes(3)) {
+newArray.forEach(function(element, index) {
+    if  (element === 3) {
        returnArray.push("Won't you be my neighbor?");
     }
-    // else if (element === 2) {
-    //   returnArray.push("Boop!");
-    // }
-    // else if (element === 1) {
-    //   returnArray.push("Beep!");
-    // }
+    else if (element === 2) {
+      returnArray.push("Boop!");
+    }
+    else if (element === 1) {
+      returnArray.push("Beep!");
+    }
     else {
       returnArray.push(element);
     };
