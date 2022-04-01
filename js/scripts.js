@@ -14,10 +14,10 @@ newArray.forEach(function(element) {
     if  (element.toString().includes(3)) {
        returnArray.push("Won't you be my neighbor?");
     }
-    else if (element === 2) {
+    else if (element.toString().includes(2)) {
       returnArray.push("Boop!");
     }
-    else if (element === 1) {
+    else if (element.toString().includes(1)) {
       returnArray.push("Beep!");
     }
     else {
