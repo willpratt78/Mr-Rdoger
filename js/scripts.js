@@ -4,7 +4,7 @@ let newArray =[]
 let returnArray = []
 function numberArray() {
   while (array >= base) {
-  newArray.push(base ++)
+  newArray.push(base ++);
 }
 }
 console.log(newArray)
@@ -33,3 +33,4 @@ console.log(newArray)
 
 numberReplacement(newArray)
 console.log(returnArray)
+
