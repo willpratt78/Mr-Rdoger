@@ -4,10 +4,6 @@ Test: "It should return an array of numbers from 0 to the user's inputted number
 Code: numberArray(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-Test: "It should remove old input info if a new input is used"
-Code: numberArray (5) numberArray(3)
-Expected Output: [0, 1, 2, 3]
-
 Describe: numberReplacement()
 
 Test: "It should replace the number 3 with 'Won't you be my neighbor?'"
