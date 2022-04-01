@@ -10,8 +10,8 @@ function numberArray() {
 console.log(newArray)
 
 function numberReplacement() {
-newArray.forEach(function(element, index) {
-    if  (element === 3) {
+newArray.forEach(function(element) {
+    if  (element.toString().includes(3)) {
        returnArray.push("Won't you be my neighbor?");
     }
     else if (element === 2) {
@@ -33,4 +33,6 @@ console.log(newArray)
 
 numberReplacement(newArray)
 console.log(returnArray)
+
+
 
