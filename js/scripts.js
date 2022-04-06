@@ -1,7 +1,7 @@
 // Business Logic
 
 let base = 0; 
-const array = []
+let array = []
 let newArray =[]
 let returnArray = []
 function numberArray() {
@@ -9,7 +9,9 @@ function numberArray() {
   newArray.push(base ++);
 }
 }
-console.log(newArray)
+
+console.log(returnArray)
+
 
 function numberReplacement() {
 newArray.forEach(function(element) {
@@ -33,7 +35,7 @@ newArray.forEach(function(element) {
 $(document).ready(function() {
   $("#number-form").submit(function(e) {
     e.preventDefault();
-    const number = parseInt($("#number").val());
+    let number = parseInt($("#number").val());
     array.push(number)
     numberArray(array)
     numberReplacement(newArray)
@@ -42,14 +44,3 @@ $(document).ready(function() {
     $("#output").append(returnArray.join(', '))
   })
 })
-
-
-
-numberArray(array)
-console.log(newArray)
-
-numberReplacement(newArray)
-console.log(returnArray)
-
-
-
