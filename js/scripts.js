@@ -1,5 +1,7 @@
-let base = 0
-const array = [20]
+// Business Logic
+
+let base = 0; 
+const array = []
 let newArray =[]
 let returnArray = []
 function numberArray() {
@@ -25,6 +27,21 @@ newArray.forEach(function(element) {
     };
   });
 };
+
+//UI Logic
+
+$(document).ready(function() {
+  $("#number-form").submit(function(e) {
+    e.preventDefault();
+    const number = parseInt($("#number").val());
+    array.push(number)
+    numberArray(array)
+    numberReplacement(newArray)
+
+    $("#output").text("");
+    $("#output").append(returnArray.join(', '))
+  })
+})
 
 
 
