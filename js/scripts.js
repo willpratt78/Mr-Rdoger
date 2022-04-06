@@ -39,8 +39,9 @@ $(document).ready(function() {
     array.push(number)
     numberArray(array)
     numberReplacement(newArray)
-
+    
     $("#output").text("");
     $("#output").append(returnArray.join(', '))
+
   })
 })
